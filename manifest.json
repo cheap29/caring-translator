@@ -1,0 +1,26 @@
+{
+  "name": "選択→ギャル語やさ訳（Side Panel）",
+  "description": "選択した英文や難文をAIで要点・やさ訳・ギャル語にして右サイドバーに表示",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "storage",
+    "sidePanel"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "img/icon16.png",
+    "32": "img/icon32.png",
+    "128": "img/icon128.png"
+  }
+}

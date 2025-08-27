@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>設定</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto,
+          "Noto Sans JP", sans-serif;
+        margin: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 600;
+      }
+      input {
+        width: 480px;
+        max-width: 100%;
+        padding: 8px;
+      }
+      button {
+        margin-top: 10px;
+        padding: 8px 14px;
+      }
+      .note {
+        color: #666;
+        font-size: 12px;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>設定</h1>
+    <label for="key">OpenAI APIキー</label>
+    <input id="key" type="password" placeholder="sk-..." />
+    <div class="note">
+      ※
+      キーはChrome同期ストレージに暗号化保存。課金・利用制限はご自身で管理してください。
+    </div>
+    <button id="save">保存</button>
+    <div id="status" class="note"></div>
+    <script src="options.js"></script>
+  </body>
+</html>

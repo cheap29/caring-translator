@@ -1,0 +1,2 @@
+# caring-translator
+選択したテキストをわかりやすくギャル翻訳してくれるchrome拡張
